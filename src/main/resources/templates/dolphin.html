@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Dolphin</title>
+    <link rel="stylesheet" href="/css/animal-page.css">
 </head>
-<body>
+<body class="dolphin">
 
+
+<h1>Dolphin</h1>
+<div class="bio">
+    <p>Animal Noise: <span th:text="${dolphin.animalNoise}"></span></p>
+    <p> Favorite Meal: <span th:text="${dolphin.favoriteMeal}"></span></p>
+    <p> Where I Live: <span th:text="${dolphin.habitat}"></span></p>
+</div>
+<div class="text">
+    <p>
+        Dolphins are highly intelligent and social animals that are found in both freshwater and saltwater environments.
+        Known for their playful behavior and acrobatic leaps, they are often seen riding the waves near boats.
+        Dolphins have a complex communication system, using clicks, whistles, and body movements to interact
+        with each other. Some species, like the bottlenose dolphin, are particularly well-studied due to their
+        interactions with humans.
+    </p>
+    <p>
+        Dolphins are carnivorous and primarily feed on fish and squid. They have a specialized hunting technique
+        known as "fish herding," where they work together to corral fish into tight groups, making them easier
+        to catch. Due to their high intelligence and complex social structures, dolphins are often the subject
+        of research in animal cognition, and their ability to understand tasks and exhibit problem-solving skills
+        has made them a subject of fascination for scientists.
+    </p>
+    <a class= "button" href="/index">home</a>
+</div>
+<div class="video">
+    <iframe width="900" height="550" src="https://www.youtube.com/embed/G7L4YzGAvMA?si=7je-LKP7xOjvRUtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </body>
 </html>

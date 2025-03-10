@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bear</title>
+    <link rel="stylesheet" href="/css/animal-page.css">
 </head>
-<body>
+<body class="bear">
 
+
+<h1>Bear</h1>
+<div class="bio">
+    <p>Animal Noise: <span th:text="${bear.animalNoise}"></span></p>
+    <p> Favorite Meal: <span th:text="${bear.favoriteMeal}"></span></p>
+    <p> Where I Live: <span th:text="${bear.habitat}"></span></p>
+</div>
+<div class="text">
+        <p>
+            Bears have been hunted since prehistoric times for their meat and fur; they have also
+            been used for bear-baiting and other forms of entertainment, such as being made to dance.
+            With their powerful physical presence, they play a prominent role in the arts, mythology,
+            and other cultural aspects of various human societies. In modern times, bears have come
+            under pressure through encroachment on their habitats and illegal trade in bear parts,
+            including the Asian bile bear market.
+        </p>
+        <p>
+            Bears are found across North America, Europe, and Asia, inhabiting forests, tundras,
+            and mountain regions. They are highly adaptable omnivores, with diets ranging from berries and
+            fish to large mammals. Their hibernation cycles are crucial for survival in colder climates,
+            allowing them to conserve energy during harsh winters. Some species, like the polar bear,
+            are heavily reliant on ice-covered regions, making them vulnerable to climate change.
+        </p>
+    <a class= "button" href="/index">home</a>
+</div>
+<div class="video">
+    <iframe width="900" height="550" src="https://www.youtube.com/embed/IRRCX1ZQdVY?si=kO7qyA7teHjhtU8b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </body>
 </html>

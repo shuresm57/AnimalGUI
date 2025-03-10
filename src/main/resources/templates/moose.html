@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Moose</title>
+    <link rel="stylesheet" href="/css/animal-page.css">
 </head>
-<body>
+<body class="moose">
 
+
+<h1>Moose</h1>
+<div class="bio">
+    <p>Animal Noise: <span th:text="${moose.animalNoise}"></span></p>
+    <p> Favorite Meal: <span th:text="${moose.favoriteMeal}"></span></p>
+    <p> Where I Live: <span th:text="${moose.habitat}"></span></p>
+</div>
+<div class="text">
+    <p>
+        Moose, the largest members of the deer family, are easily recognizable by their long legs, large
+        antlers, and massive bodies. These herbivorous mammals are primarily found in the northern parts of
+        North America, Europe, and Asia. Moose are well adapted to cold environments and can be found in
+        forests, swamps, and tundras, where they feed on shrubs, aquatic plants, and tree bark.
+    </p>
+    <p>
+        Moose are known for their solitary nature and are most active during dawn and dusk. Despite their
+        large size, they are excellent swimmers and can travel long distances through water to reach food
+        sources. They play an important role in their ecosystems, controlling vegetation growth and serving
+        as prey for predators such as wolves and bears. However, moose populations are declining in some areas
+        due to hunting, habitat loss, and climate change, especially in warmer climates.
+    </p>
+        <a class= "button" href="/index">home</a>
+</div>
+<div class="video">
+    <iframe width="900" height="550" src="https://www.youtube.com/embed/M26ug8MGYlY?si=RoBj6Bh1XLfEb8Qn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </body>
 </html>

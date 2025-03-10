@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Crab!</title>
+    <title>Crab</title>
+    <link rel="stylesheet" href="/css/animal-page.css">
 </head>
-<body>
+<body class="crab">
 
+
+<h1>Crab</h1>
+<div class="bio">
+    <p>Animal Noise: <span th:text="${crab.animalNoise}"></span></p>
+    <p> Favorite Meal: <span th:text="${crab.favoriteMeal}"></span></p>
+    <p> Where I Live: <span th:text="${crab.habitat}"></span></p>
+</div>
+<div class="text">
+    <p>
+        Crabs are fascinating creatures, with over 6,800 species found in oceans, freshwater habitats, and on land.
+        These crustaceans have a hard exoskeleton, which provides them with protection from predators, and they
+        are equipped with sharp claws used for defense and hunting. Many species of crabs are known for their
+        sideways walk, a unique characteristic that allows them to move quickly across surfaces.
+    </p>
+    <p>
+        Crabs play a vital role in the marine ecosystem by helping with the decomposition of organic matter
+        and being a key food source for many marine animals. On land, crabs contribute to the balance of
+        coastal ecosystems by aerating the soil. In some cultures, crabs are harvested for their meat, which is
+        considered a delicacy, while others are admired for their role in folklore and traditions.
+    </p>
+    <a class= "button" href="/index">home</a>
+</div>
+<div class="video">
+    <iframe width="900" height="550" src="https://www.youtube.com/embed/YlEbg6fEKGI?si=jD3bdDI0DZRqpNSW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 </body>
 </html>
