@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lion</title>
+    <link rel="stylesheet" href="/css/animal-page.css">
+</head>
+<body>
+
+<h1>Lion</h1>
+<p>Name: <span th:text="${lion.getAnimalNoise()}"></span></p>
+<p>Age: <span th:text="${lion.getFavoriteMeal()}"></span></p>
+<p>Roar Sound: <span th:text="${lion.getHabitat}"></span></p>
+
+<a href="/index">Back to home</a>
+<div class="card-container">
+    <div class="card">
+        <img class="animal-images" src="/imgs/lion-21662.jpg" alt="lion">
+    </div>
+</div>
+
+<div class="text">
+    One of the most widely recognised animal symbols in human culture,
+    the lion has been extensively depicted in sculptures and paintings,
+    on national flags, and in literature and films. Lions have been kept
+    in menageries since the time of the Roman Empire and have been a key
+    species sought for exhibition in zoological gardens across the world
+    since the late 18th century. Cultural depictions of lions have occurred
+    worldwide, particularly has a symbol of power and royalty.
+</div>
+
+</body>
+</html>
