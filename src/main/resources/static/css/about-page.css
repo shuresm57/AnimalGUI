@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: darkolivegreen;
+    margin: 0;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+body.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+h1 {
+    text-align: left;
+    font-size: xxx-large;
+    margin-top: 60px;
+    margin-left: 60px;
+    letter-spacing: -4px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+    gap: 10px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: darkolivegreen;
+    text-decoration: underline;
+    color: white;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+button:hover {
+    background-color: black;
+    color:white;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button a {
+    color: white;
+    display: block;
+}
+
+button a:visited {
+    color: white;
+}

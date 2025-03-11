@@ -8,12 +8,22 @@ body {
     flex-direction: column;
 }
 
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+body.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
 .dolphin{
     background-color: #1D4E89;
 }
 
 .lion{
-    background-color: #FAD5A5;
+    background-color: #C19A6B;
 }
 
 .moose{
@@ -75,3 +85,5 @@ h1 {
     left: 600px;
     top: 150px;
 }
+
+
